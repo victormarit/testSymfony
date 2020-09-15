@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="css/subscribe.css" >
+{% endblock %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+        <h1>Créer un compte</h1>
+    </div>
+
+    <article class="card-body mx-auto" style="max-width: 400px;">
+        
+        <div>
+            <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i> Connexion via facebook</a>
+        </div>
+        
+        <div class="divider-text">
+            <span class="bg-light">OU</span>
+        </div>
+        
+        <form>
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input name="firstname" class="form-control" placeholder="Prénom" type="text">
+            </div> <!-- form-group// -->
+            
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                </div>
+                <input name="email" class="form-control" placeholder="Adresse Email" type="email">
+            </div> <!-- form-group// -->
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                </div>
+                <input name="email_confirmation" class="form-control" placeholder="Confirmation Email" type="email">
+            </div> <!-- form-group// -->
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder='Mot de passe ' type="password">
+            </div> <!-- form-group// -->
+            
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                </div>
+                <input class="form-control" placeholder="Confirmation mot de passe" type="password">
+            </div> <!-- form-group// -->                                      
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block"> Créer Compte </button>
+            </div> <!-- form-group// -->      
+            <p class="text-center">Déjà un compte <a href="{{ path('connection') }}">se connecter</a> </p>                                                                 
+        </form>
+    </article>
+
+{% endblock %}
