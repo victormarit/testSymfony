@@ -22,12 +22,19 @@
             <span class="bg-light">OU</span>
         </div>
         
-        <form>
+        <form action="{{ path('subscribe.registration') }}" method="post">
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                 </div>
                 <input name="firstname" class="form-control" placeholder="Prénom" type="text">
+            </div> <!-- form-group// -->
+
+            <div class="form-group input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                </div>
+                <input name="lastname" class="form-control" placeholder="Nom" type="text">
             </div> <!-- form-group// -->
             
             <div class="form-group input-group">
@@ -48,14 +55,14 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
-                <input class="form-control" placeholder='Mot de passe ' type="password">
+                <input  name='password' class="form-control" placeholder='Mot de passe ' type="password">
             </div> <!-- form-group// -->
             
             <div class="form-group input-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
                 </div>
-                <input class="form-control" placeholder="Confirmation mot de passe" type="password">
+                <input name='password_confirmation'class="form-control" placeholder="Confirmation mot de passe" type="password">
             </div> <!-- form-group// -->                                      
             
             <div class="form-group">

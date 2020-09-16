@@ -2,9 +2,17 @@ connection:
     path: /
     controller: App\Controller\ConnectionController::index
 
+connection.login:
+    path: /login
+    controller: App\Controller\ConnectionController::login
+
 subscribe:
     path: /subscribe
     controller: App\Controller\SubscribeController::index
+
+subscribe.registration:
+    path: /registration
+    controller: App\Controller\SubscribeController::registration
 
 
 #index:
